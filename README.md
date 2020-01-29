@@ -1,5 +1,18 @@
 # Algorithms in JS 💛
 
+## Getting Started
+
+```bash
+git clone https://github.com/jeanpaulsio/algorithms-in-js.git
+cd algorithms-in-js
+
+# Install dependencies
+yarn
+
+# Run tests
+yarn test
+```
+
 ## Arrays and Strings
 
 [Clone Even Numbers](./arrays_and_strings/clone_even_numbers.js)
