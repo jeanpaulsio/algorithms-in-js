@@ -2,19 +2,19 @@ import { shortestUnsortedSubarray } from "../shortest_unsorted_subarray";
 
 describe("shortestUnsortedSubarray", () => {
   test("null input", () => {
-    const actual = () => shortestUnsortedSubarray([]);
+    const actual = () => shortestUnsortedSubarray(null);
     expect(actual).toThrow();
   });
 
   test("one element", () => {
     const actual = shortestUnsortedSubarray([1]);
-    const expected = [0, 0];
+    const expected = [-1, -1];
     expect(actual).toEqual(expected);
   });
 
   test("two elements sorted", () => {
     const actual = shortestUnsortedSubarray([1, 2]);
-    const expected = [0, 0];
+    const expected = [-1, -1];
     expect(actual).toEqual(expected);
   });
 
@@ -26,7 +26,7 @@ describe("shortestUnsortedSubarray", () => {
 
   test("elements already sorted", () => {
     const actual = shortestUnsortedSubarray([1, 2, 3, 4, 5, 6, 7]);
-    const expected = [0, 0];
+    const expected = [-1, -1];
     expect(actual).toEqual(expected);
   });
 
@@ -38,13 +38,13 @@ describe("shortestUnsortedSubarray", () => {
 
   test("elements unsorted at middle", () => {
     const actual = shortestUnsortedSubarray([2, 3, 5, 4, 9, 8, 7, 10, 11, 12]);
-    const expected = [3, 6];
+    const expected = [2, 6];
     expect(actual).toEqual(expected);
   });
 
   test("elements unsorted at end", () => {
     const actual = shortestUnsortedSubarray([1, 2, 3, 4, 5, 10, 9, 8]);
-    const expected = [6, 8];
+    const expected = [5, 7];
     expect(actual).toEqual(expected);
   });
 

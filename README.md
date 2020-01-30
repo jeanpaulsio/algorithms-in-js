@@ -54,3 +54,21 @@ yarn test
 - Space complexity is constant O(1)
 
 </details>
+
+[Find shortest unsorted subarray](./arrays_and_strings/shortest_unsorted_subarray.js)
+
+<details>
+  <summary>Notes</summary>
+
+- Begin a pointer at the start (i) and end (j) of the array
+- Increment i until value at i is > value at i + 1
+- Decrement j until value at j is < value at j - 1
+- Find the min and max values of the subarray found bounded by i and j
+- Expand i and j if necessary based on min and max values
+- Value at i - 1 should be less than the min
+- Value at j + 1 should be greater than the max
+- Return the indices, [i, j]
+- Time complexity is linear O(n)
+- Space complexity is constant O(1)
+
+</details>
