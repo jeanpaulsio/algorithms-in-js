@@ -72,3 +72,17 @@ yarn test
 - Space complexity is constant O(1)
 
 </details>
+
+[Dutch National Flag](./arrays_and_strings/dutch_national_flag.js)
+
+<details>
+  <summary>Notes</summary>
+
+- Partion the array into 4 parts: low, mid, currently processing, and high
+- Low and mid begin at the array's start; high at the end
+- Currently processing will always be at the mid + 1
+- Continuously shrink the unprocessed partition until the array is sorted correctly
+- Time complexity is linear O(n)
+- Space complexity is constant O(1)
+
+</details>
