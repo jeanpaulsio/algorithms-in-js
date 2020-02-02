@@ -86,3 +86,16 @@ yarn test
 - Space complexity is constant O(1)
 
 </details>
+
+[Max Subarray Sum](./arrays_and_strings/max_subarray_sum.js)
+
+<details>
+  <summary>Notes</summary>
+
+- We use Kadane's Algorithm to solve this problem
+- If we know the max sum at arr[i - 1], we can find the max at arr[i]
+- Each time we get a positive sum, compare it with the max so far
+- Time complexity is linear O(n)
+- Space complexity is constant O(1)
+
+</details>
