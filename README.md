@@ -99,3 +99,8 @@ yarn test
 - Space complexity is constant O(1)
 
 </details>
+
+## Dynamic Programming
+
+[Triple Step](./recursion_and_dynamic_programming/triple_step.js)
+
