@@ -1,4 +1,4 @@
-import { shortestUnsortedSubarray } from "../shortest_unsorted_subarray";
+import { shortestUnsortedSubarray } from "@arrays/shortest_unsorted_subarray";
 
 describe("shortestUnsortedSubarray", () => {
   test("null input", () => {

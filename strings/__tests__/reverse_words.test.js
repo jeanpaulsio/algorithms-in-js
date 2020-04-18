@@ -1,4 +1,4 @@
-import { reverseWords } from "../reverse_words";
+import { reverseWords } from "@strings/reverse_words";
 
 describe("reverseWords", () => {
   test("empty string", () => {

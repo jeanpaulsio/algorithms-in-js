@@ -4,6 +4,7 @@
  *
  * e.g. "hello world" => "world hello"
  */
+
 export function reverseWords(sentence) {
   if (sentence === "" || sentence === " ") {
     throw new Error("Input must contain words.");

@@ -1,4 +1,4 @@
-import { maxSubarraySum } from "../max_subarray_sum";
+import { maxSubarraySum } from "@arrays/max_subarray_sum";
 
 describe("maxSubarraySum", () => {
   test("empty array", () => {

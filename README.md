@@ -1,20 +1,8 @@
 # Algorithms in JS 💛
 
-## Arrays and Strings
+## Strings
 
-[Clone Even Numbers](./arrays_and_strings/clone_even_numbers.js)
-
-<details>
-  <summary>Algorithm</summary>
-
-- We use two pointers - one at the end of the array and one at the last positive number
-- Array is traversed backwards
-- Time complexity is linear O(n)
-- Space complexity is constant O(1)
-
-</details>
-
-[Reverse a Sentence](./arrays_and_strings/reverse_words.js)
+### [Reverse a Sentence](./strings/reverse_words.js)
 
 <details>
   <summary>Algorithm</summary>
@@ -28,7 +16,22 @@
 
 </details>
 
-[Two Sum](./arrays_and_strings/two_sum.js)
+## Arrays
+
+### [Clone Even Numbers](./arrays/clone_even_numbers.js)
+
+<details>
+  <summary>Algorithm</summary>
+
+- We use two pointers - one at the end of the array and one at the last positive number
+- Array is traversed backwards
+- Time complexity is linear O(n)
+- Space complexity is constant O(1)
+
+</details>
+
+
+### [Two Sum](./arrays/two_sum.js)
 
 <details>
   <summary>Algorithm</summary>
@@ -42,7 +45,7 @@
 
 </details>
 
-[Find shortest unsorted subarray](./arrays_and_strings/shortest_unsorted_subarray.js)
+### [Find shortest unsorted subarray](./arrays/shortest_unsorted_subarray.js)
 
 <details>
   <summary>Algorithm</summary>
@@ -60,7 +63,7 @@
 
 </details>
 
-[Dutch National Flag](./arrays_and_strings/dutch_national_flag.js)
+### [Dutch National Flag](./arrays_and_strings/dutch_national_flag.js)
 
 <details>
   <summary>Algorithm</summary>
@@ -74,7 +77,7 @@
 
 </details>
 
-[Max Subarray Sum](./arrays_and_strings/max_subarray_sum.js)
+### [Max Subarray Sum](./arrays/max_subarray_sum.js)
 
 <details>
   <summary>Algorithm</summary>

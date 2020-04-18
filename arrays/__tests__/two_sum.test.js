@@ -1,4 +1,4 @@
-import { twoSum } from "../two_sum";
+import { twoSum } from "@arrays/two_sum";
 
 describe("twoSum", () => {
   test("null input", () => {

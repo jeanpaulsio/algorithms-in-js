@@ -1,4 +1,4 @@
-import { cloneEvenNumbers, lastNonNegativeIndex } from "../clone_even_numbers";
+import { cloneEvenNumbers, lastNonNegativeIndex } from "@arrays/clone_even_numbers";
 
 describe("cloneEvenNumbers", () => {
   test("null input", () => {

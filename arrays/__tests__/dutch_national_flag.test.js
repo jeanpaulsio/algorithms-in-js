@@ -1,4 +1,4 @@
-import { dutchNationalFlag } from "../dutch_national_flag";
+import { dutchNationalFlag } from "@arrays/dutch_national_flag";
 
 describe("dutchNationalFlag", () => {
   test("null input", () => {
