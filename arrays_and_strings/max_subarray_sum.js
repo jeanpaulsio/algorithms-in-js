@@ -13,13 +13,20 @@ export function maxSubarraySum(arr) {
     throw new Error("Input array must not be empty.");
   }
 
-  let maxSum = 0;
-  let maxHere = 0;
+  let maxSoFar = 0;
+  let maxEndingHere = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    maxHere = Math.max(0, maxHere + arr[i]);
-    maxSum = Math.max(maxHere, maxSum);
+    maxEndingHere += arr[i];
+
+    if (maxEndingHere < 0) {
+      maxEndingHere = 0;
+    }
+
+    if (maxSoFar < maxEndingHere) {
+      maxSoFar = maxEndingHere;
+    }
   }
 
-  return maxSum;
+  return maxSoFar;
 }
