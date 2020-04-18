@@ -104,3 +104,19 @@
 - Space complexity is constant O(1)
 
 </details>
+
+### [Find Subarray That Sums to 0](./arrays/subarray_sum_zero.js)
+
+<details>
+  <summary>Algorithm</summary>
+
+- We use cumulative sums
+- Create a hash map where the key is the cumulative sum and the value is the index at which it was found
+- Initialize the sum at 0
+- Traverse the array from start to finish
+- For every element, update the sum to be sum += array[i]
+- If the sum is equal to 0, return the subarray from 0 to i
+- If the sum is already in the map, return the subarray from the hash map's value + 1 to i
+- Place the sum and index i as a key-value pair
+
+</details>
