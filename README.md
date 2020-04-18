@@ -5,7 +5,7 @@
 [Clone Even Numbers](./arrays_and_strings/clone_even_numbers.js)
 
 <details>
-  <summary>Notes</summary>
+  <summary>Algorithm</summary>
 
 - We use two pointers - one at the end of the array and one at the last positive number
 - Array is traversed backwards
@@ -17,7 +17,7 @@
 [Reverse a Sentence](./arrays_and_strings/reverse_words.js)
 
 <details>
-  <summary>Notes</summary>
+  <summary>Algorithm</summary>
 
 - We use two pointers - one to keep track of the current word end; the other to find the beginning of a word
 - Traverse string backwards until a blank space is found
@@ -31,7 +31,7 @@
 [Two Sum](./arrays_and_strings/two_sum.js)
 
 <details>
-  <summary>Notes</summary>
+  <summary>Algorithm</summary>
 
 - We have a pointer at the start and at the end of the array
 - We take the sum of the values at the current indices
@@ -45,7 +45,7 @@
 [Find shortest unsorted subarray](./arrays_and_strings/shortest_unsorted_subarray.js)
 
 <details>
-  <summary>Notes</summary>
+  <summary>Algorithm</summary>
 
 - Begin a pointer at the start (i) and end (j) of the array
 - Increment i until value at i is > value at i + 1
@@ -63,7 +63,7 @@
 [Dutch National Flag](./arrays_and_strings/dutch_national_flag.js)
 
 <details>
-  <summary>Notes</summary>
+  <summary>Algorithm</summary>
 
 - Partion the array into 4 parts: low, mid, currently processing, and high
 - Low and mid begin at the array's start; high at the end
@@ -77,7 +77,7 @@
 [Max Subarray Sum](./arrays_and_strings/max_subarray_sum.js)
 
 <details>
-  <summary>Notes</summary>
+  <summary>Algorithm</summary>
 
 - We use Kadane's Algorithm to solve this problem
 - If we know the max sum at arr[i - 1], we can find the max at arr[i]
