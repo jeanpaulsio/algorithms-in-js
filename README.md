@@ -16,6 +16,21 @@
 
 </details>
 
+### [Longest Unique Substring](./strings/longest_uniq_substring.js)
+
+<details>
+  <summary>Algorithm</summary>
+
+- We use a sliding window that will always have unique characters inside of it
+- Start with two pointers at the beginning of the string
+- Iterate through the string in one pass
+- Every iteration, expand the end pointer by 1
+- For every new character, check to see if it exists in the already processed part of the string
+  - If the new character is unique, increase the max length by 1
+  - If the new character exists, the longest substring changes such that the start is the next character of the previous instance to the currently scanned
+
+</details>
+
 ## Arrays
 
 ### [Clone Even Numbers](./arrays/clone_even_numbers.js)
