@@ -15,30 +15,36 @@ export function longestUniqSubstring(str) {
 
   let start = 0;
   let end = 0;
-  let longest = 1;
-  let map = { [str[0]]: 0 };
+
+  let maxLength = 1;
   let result = [0, 0];
 
+  let map = { [str[end]]: 0 };
+
   while (end < str.length - 1) {
-    // expand end pointer
-    end++;
+    end += 1;
 
-    let toAdd = str[end];
+    const charToProcess = str[end];
 
-    if (toAdd in map && map[toAdd] >= start) {
-      start = map[toAdd] + 1;
+    // Check to see if character to process exists
+    // in the already-processed substring of unique values
+    if (charToProcess in map && map[charToProcess] >= start) {
+      // Move the start pointer to the character after the last occurence
+      // of the charToProcess
+      start = map[charToProcess] + 1;
     }
 
-    map[toAdd] = end;
+    // Put processed character in the map
+    map[charToProcess] = end;
 
-    // update result
-    if (end - start + 1 > longest) {
-      longest = end - start + 1;
+    // Update longest
+    // end - start + 1 gets you the length of the current substring
+    if (end - start + 1 > maxLength) {
+      maxLength = end - start + 1;
       result[0] = start;
       result[1] = end;
     }
   }
 
-  // slice's second argument is exclusive
   return str.slice(result[0], result[1] + 1);
 }
