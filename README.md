@@ -120,3 +120,18 @@
 - Place the sum and index i as a key-value pair
 
 </details>
+
+## Binary Search
+
+### [Binary Search Algorithm](./binary_search/basic.js)
+
+<details>
+  <summary>Algorithm</summary>
+
+- Compare x with the middle element
+- Computer the middle element by adding half the distance to the left most element
+- If x matches the middle element, return the middle index
+- If arr at middle index is greater than x, x must lie in the left half of the array
+- If arr at middle index is less than x, x must lie in the right half of the array
+
+</details>
