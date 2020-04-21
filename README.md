@@ -135,3 +135,13 @@
 - If arr at middle index is less than x, x must lie in the right half of the array
 
 </details>
+
+### [First repeating element in sorted array](./binary_search/repeating_element.js)
+
+<details>
+  <summary>Algorithm</summary>
+
+- Run a regular binary search
+- Search the left subarray when arr[mid] is greater than the target AND
+  - when arr[mid] is the target and arr[mid - 1] is also the target
+</details>
