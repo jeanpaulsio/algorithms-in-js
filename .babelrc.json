@@ -6,9 +6,7 @@
       {
         "root": ["./"],
         "alias": {
-          "@arrays": "./arrays",
-          "@binary_search": "./binary_search",
-          "@strings": "./strings"
+          "@arrays": "./arrays"
         }
       }
     ]
