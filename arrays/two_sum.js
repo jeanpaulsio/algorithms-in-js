@@ -1,12 +1,4 @@
 export const twoSum = (arr, x) => {
-  if (arr === null || x === null) {
-    throw new Error("Input must not be null.");
-  }
-
-  if (arr.length === 1) {
-    throw new Error("Array must have at least 2 items.");
-  }
-
   const result = [-1, -1];
 
   let i = 0;

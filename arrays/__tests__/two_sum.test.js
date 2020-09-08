@@ -1,16 +1,6 @@
 import { twoSum } from "@arrays/two_sum";
 
 describe("twoSum", () => {
-  test("null input", () => {
-    const actual = () => twoSum(null, null);
-    expect(actual).toThrowError("Input must not be null.");
-  });
-
-  test("single element", () => {
-    const actual = () => twoSum([1], 1);
-    expect(actual).toThrowError("Array must have at least 2 items.");
-  });
-
   test("two elements without sum", () => {
     const actual = twoSum([1, 2], 10);
     const expected = [-1, -1];

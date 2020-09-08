@@ -1,8 +1,4 @@
 export const shortestUnsortedSubarray = (arr) => {
-  if (arr === null) {
-    throw new Error();
-  }
-
   const result = [-1, -1];
 
   let i = 0;

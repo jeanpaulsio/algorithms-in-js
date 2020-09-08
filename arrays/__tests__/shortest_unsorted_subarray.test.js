@@ -1,11 +1,6 @@
 import { shortestUnsortedSubarray } from "@arrays/shortest_unsorted_subarray";
 
 describe("shortestUnsortedSubarray", () => {
-  test("null input", () => {
-    const actual = () => shortestUnsortedSubarray(null);
-    expect(actual).toThrow();
-  });
-
   test("two elements sorted", () => {
     const actual = shortestUnsortedSubarray([1, 2]);
     const expected = [-1, -1];
