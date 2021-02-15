@@ -1,7 +1,3 @@
 # Algorithms in JS 💛
 
-```
-git clone https://github.com/jeanpaulsio/algorithms-in-js.git
-cd algorithms-in-js
-yarn install
-```
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="200" />
