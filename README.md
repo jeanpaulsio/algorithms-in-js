@@ -53,4 +53,4 @@ Created files in arrays-and-strings/:
 
 ## Directory
 
-1. [Binary Search](./binary-search/README.md)
+1. [Arrays and Strings](./arrays-and-strings/README.md)
